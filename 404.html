@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>404 not found</title>
+  <title>Error</title>
 </head>
 <body>
-  <h1>404</h1>
-  <p>page not Found</p>
-  <a href="index.html">Go Msy</a>
+  <h1 id="randomText">Error:</h1>
+  <p>Something Wrong or missing file</p>
+  <a href="index.html">Msy.3.31</a>
+
+  <script>
+    // Generate random number from 0 to 299
+    let randomNumber = Math.floor(Math.random() * 300);
+
+    // Show it in the H1
+    document.getElementById("randomText").innerText = 
+      "Error: " + randomNumber + "";
+  </script>
 </body>
 </html>
